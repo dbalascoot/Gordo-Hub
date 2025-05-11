@@ -1,9 +1,5 @@
-local painel = script.Parent:WaitForChild("Painel")
-local nomeLabel = painel:WaitForChild("BY dbala e koda")
-
-nomeLabel.Text = "Painel VIP"
 -- local function scary()
---     warn("❌ This script must only be executed from the offical dbala e Koda loader")
+--     warn("❌ This script must only be executed from the offical dbala (DK) loader")
 --         return
 --     end
 
