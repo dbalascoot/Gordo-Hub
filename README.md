@@ -1,5 +1,5 @@
 -- local function scary()
---     warn("❌ This script must only be executed from the offical dbala (DK) loader")
+--     warn("❌ This script must only be executed from the offical dbala e Koda loader")
 --         return
 --     end
 
@@ -36,7 +36,13 @@
 -- end
 -- _G._secondaryData = nil
 -- _G.__userKey = nil
-print("✅ Security verification passed. Loading dbala (DK)...")
+
+local painel = script.Parent:WaitForChild("Painel")
+local nomeLabel = painel:WaitForChild("BY dbala e koda")
+
+nomeLabel.Text = "Painel VIP"
+
+print("✅ Security verification passed. Loading dbala...")
 if game.PlaceId == 2753915549 then
 	World1 = true;
 elseif game.PlaceId == 4442272183 then
@@ -11898,17 +11904,17 @@ task.spawn(function()
 	while task.wait() do
 		pcall(function()
 			if (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149431" then
-				FM:Set("ðŸŒ• Full Moon 100%");
+				FM:Set(" Full Moon 100%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149052" then
-				FM:Set("ðŸŒ– Full Moon 75%");
+				FM:Set(" Full Moon 75%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709143733" then
-				FM:Set("ðŸŒ— Full Moon 50%");
+				FM:Set(" Full Moon 50%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709150401" then
-				FM:Set("ðŸŒ˜ Full Moon 25%");
+				FM:Set(" Full Moon 25%");
 			elseif (game:GetService("Lighting")).Sky.MoonTextureId == "http://www.roblox.com/asset/?id=9709149680" then
-				FM:Set("ðŸŒ˜ Full Moon 15%");
+				FM:Set(" Full Moon 15%");
 			else
-				FM:Set("ðŸŒ‘ Full Moon 0%");
+				FM:Set(" Full Moon 0%");
 			end;
 		end);
 	end;
@@ -11917,9 +11923,9 @@ spawn(function()
 	pcall(function()
 		while wait(0.2) do
 			if game.Workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island") then
-				KitsuneStatus:Set("â›©ï¸ Kitsune Island is Spawning");
+				KitsuneStatus:Set(" Kitsune Island is Spawning");
 			else
-				KitsuneStatus:Set("â›©ï¸ Kitsune Island Not Spawn");
+				KitsuneStatus:Set(" Kitsune Island Not Spawn");
 			end;
 		end;
 	end);
@@ -11928,9 +11934,9 @@ spawn(function()
 	pcall(function()
 		while wait(0.2) do
 			if game.Workspace._WorldOrigin.Locations:FindFirstChild("Frozen Dimension") then
-				FrozenStatus:Set("â„ï¸ Frozen Dimension Spawning");
+				FrozenStatus:Set(" Frozen Dimension Spawning");
 			else
-				FrozenStatus:Set("â„ï¸ Frozen Dimension Not Spawn");
+				FrozenStatus:Set(" Frozen Dimension Not Spawn");
 			end;
 		end;
 	end);
@@ -11953,9 +11959,9 @@ spawn(function()
 		while wait(0.2) do
 			for i, v in pairs(game.Workspace:GetChildren()) do
 				if string.find(v.Name, "Fruit") then
-					FindFruit:Set("ðŸ Find " .. v.Name);
+					FindFruit:Set(" Find " .. v.Name);
 				else
-					FindFruit:Set("ðŸ Nothing");
+					FindFruit:Set(" Nothing");
 				end;
 			end;
 		end;
@@ -11966,9 +11972,9 @@ spawn(function()
 		pcall(function()
 			local response = (((game:GetService("ReplicatedStorage")):WaitForChild("Remotes")):WaitForChild("CommF_")):InvokeServer("ColorsDealer", "1");
 			if response then
-				HakiDealer:Set("ðŸŸ¢ Master Of Auras Spawning");
+				HakiDealer:Set(" Master Of Auras Spawning");
 			else
-				HakiDealer:Set("ðŸ”´ Master Of Auras Not Spawn");
+				HakiDealer:Set(" Master Of Auras Not Spawn");
 			end;
 		end);
 	end;
@@ -12037,7 +12043,7 @@ end;
 for _, v in pairs(resultAdvance) do
 	if v.OnSale == true then
 		local advancePriceWithCommas = addCommas(v.Price);
-		local AdvanceFruitInfo = v.Name .. " - $" .. advancePriceWithCommas;
+		local AdvanceFruitInfo = v.Name .. " " .. advancePriceWithCommas;
 		table.insert(advanceFruitsOnSale, AdvanceFruitInfo);
 		ServTab:Label(tostring(AdvanceFruitInfo));
 	end;
@@ -12046,7 +12052,7 @@ ServTab:Seperator("Normal Fruit Stock");
 for _, v in pairs(resultNormal) do
 	if v.OnSale == true then
 		local normalPriceWithCommas = addCommas(v.Price);
-		local NormalFruitInfo = v.Name .. " - $" .. normalPriceWithCommas;
+		local NormalFruitInfo = v.Name .. " " .. normalPriceWithCommas;
 		table.insert(normalFruitsOnSale, NormalFruitInfo);
 		ServTab:Label(tostring(NormalFruitInfo));
 	end;
