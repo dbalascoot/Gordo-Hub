@@ -44,21 +44,6 @@ elseif game.PlaceId == 4442272183 then
 elseif game.PlaceId == 7449423635 then
 	World3 = true;
 end;
--- print("--------------------------------------------------------------------------");
--- print("-- [[ Webhook ]] --");
--- (loadstring(game:HttpGet("https://gitshare.me/backend/api/files/677ec71a-082b-4b8c-a1e8-f590f2ab286a/download")))();
--- print("--------------------------------------------------------------------------");
-local Update = (loadstring(Game:HttpGet("https://you.whimper.xyz/sources/nox/data/fruitsource.lua")))();
-if Update:LoadAnimation() then
-	Update:StartLoad();
-end;
-if Update:LoadAnimation() then
-	Update:Loaded();
-end;
-local Library = Update:Window({
-	SubTitle = "Blox Fruits",
-	Size = UDim2.new(0, 450, 0, 300),
-	TabWidth = 140
 });
 local MainTab = Library:Tab("Main", "rbxassetid://10723407389");
 local FarmTab = Library:Tab("Farming", "rbxassetid://10723415335");
