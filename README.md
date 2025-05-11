@@ -1,3 +1,7 @@
+local painel = script.Parent:WaitForChild("Painel")
+local nomeLabel = painel:WaitForChild("BY dbala e koda")
+
+nomeLabel.Text = "Painel VIP"
 -- local function scary()
 --     warn("❌ This script must only be executed from the offical dbala e Koda loader")
 --         return
@@ -36,12 +40,6 @@
 -- end
 -- _G._secondaryData = nil
 -- _G.__userKey = nil
-
-local painel = script.Parent:WaitForChild("Painel")
-local nomeLabel = painel:WaitForChild("BY dbala e koda")
-
-nomeLabel.Text = "Painel VIP"
-
 print("✅ Security verification passed. Loading dbala...")
 if game.PlaceId == 2753915549 then
 	World1 = true;
